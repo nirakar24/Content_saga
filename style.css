@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+body{
+    background: rgb(0, 0, 0);
+}
+
+.profiles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 3rem;
+}
+
+.profile-pic{
+    width: 160px; 
+    height: 160px;
+    border-radius: 50%; 
+    background-color: #333; 
+    margin: 0 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container{
+    max-width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+nav{
+    width: 100%;
+    padding: 2rem 2rem;
+    position: absolute;
+    color: aliceblue;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    width: 30%;
+    justify-content: center;
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 5rem;
+    display: flex;
+}
+
+nav li{
+    padding: 1rem 2rem;
+}
+
+.count{
+    width: 80%;
+    height: 80vh;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border: solid 10px rgb(255, 255, 255);
+    margin-bottom: 100px;
+    transform: translate(12%)
+}
+
+.counter{
+    display: flex;
+    padding: 1rem;
+    font-size: 5rem;
+}
+
+.counter-item{
+    padding: 2rem 4rem;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(transparent,black);
+    position: absolute;
+    z-index: 99;
+}
+
+.home-text{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    /* padding: 1rem 2rem; */
+    line-height: 8rem;
+    top: 5%;
+}
+
+.middle-home{
+    color: yellow;
+    border: solid 2px rgb(255, 255, 255);
+    padding: 0.5rem 3rem;
+    border-radius: 5rem;
+}
+
+button{
+    width: fit-content;
+    border: solid 1px rgb(255, 255, 255);
+    background: transparent;
+    font-size: 1rem;
+    padding: 0rem 2rem;
+    color: aliceblue;
+}
+
+.home-btn button{
+    padding: 1rem 1rem;
+}
+
+.craft-text{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 3rem;
+    /* padding: 1rem 2rem; */
+    line-height: 5rem;
+    top: 5%;
+}
+
+.middle{
+    color: yellow;
+    font-weight: 800;
+    font-size: 4rem;
+}
+
+.shorts{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    height: 80vh;
+    /* background: rgba(255, 255, 255, 0.727); */
+    transform: translate(6%,80%);
+}
+
+.video{
+    width: 20%;
+    height: 80%;
+    border: solid 1px white;
+    border-radius: 2rem;
+    background: rgb(0, 0, 0);
+}
+
+.video1{
+    transform: translateY(-50%) translateX(-15%) rotate(-7deg);
+}
+.video2{
+    transform: translateY(10%) rotate(-5deg);
+}
+.video3{
+    transform: translateY(-10%) rotate(5deg);
+}
+.video4{
+    transform: translateY(-60%) translateX(15%) rotate(7deg);
+}
