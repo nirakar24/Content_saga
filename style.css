@@ -168,6 +168,9 @@ button{
 }
 
 .video1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transform: translateY(-50%) translateX(-15%) rotate(-7deg);
 }
 .video2{
@@ -178,4 +181,8 @@ button{
 }
 .video4{
     transform: translateY(-60%) translateX(15%) rotate(7deg);
+}
+
+#vid{
+    border-radius: 2rem;
 }
