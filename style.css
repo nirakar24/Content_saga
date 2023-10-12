@@ -174,12 +174,21 @@ button{
     transform: translateY(-50%) translateX(-15%) rotate(-7deg);
 }
 .video2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transform: translateY(10%) rotate(-5deg);
 }
 .video3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transform: translateY(-10%) rotate(5deg);
 }
 .video4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transform: translateY(-60%) translateX(15%) rotate(7deg);
 }
 
