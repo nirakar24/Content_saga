@@ -29,6 +29,11 @@ body{
     overflow: hidden;
 }
 
+.profile-pic:hover{
+    scale: 130%;
+    transition: 0.2s;
+}
+
 .container{
     max-width: 100%;
     height: 100vh;
@@ -156,9 +161,12 @@ button{
 }
 
 .middle{
-    color: yellow;
+    color: orange;
     font-weight: 800;
     font-size: 4rem;
+    stroke: black;
+    stroke-width: 1rem;
+    /* border: solid 1px black; */
 }
 
 .shorts{
@@ -358,4 +366,60 @@ p {
     text-align: center;
     margin-top: 130px;
     color: rgb(255, 255, 255); /* Adjust text color as needed */
+}
+
+.features-text{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.subscription{
+    width: 100%;
+    height: 150vh;
+    background:wheat;
+    transform: translate(0%,70%);
+}
+
+.subscription-text{
+    margin-top: 2rem;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
+    transform: translate(0%,20%);
+}
+
+.registration{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    height: 60vh;
+    border: solid 10px rgb(0, 0, 0);
+    transform: translate(13%,20%);
+    padding: 2rem 2rem;
+}
+
+.registration h1{
+    color: black;
+    font-size: 5rem;
+    font-weight: 100;
+    transform: translate(0%,-50%);
+}
+
+.registration button{
+    color: black;
+    border: solid 2px black;
+    width: 20%;
+    font-size: 2rem;
+}
+
+.registration button:hover{
+    color: aliceblue;
+    background: black;
+    transition: 0.5s;
 }
