@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: aliceblue;
+    font-family:'Poppins';
+    /* overflow: hidden; */
 }
 
 body{
@@ -64,12 +67,14 @@ nav li{
 .count{
     width: 80%;
     height: 80vh;
-    font-size: 2rem;
+    color: azure;
+    font-size: 1.5rem;
     display: flex;
     flex-direction: column;
+    font-weight: 100;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 2rem;
     border: solid 10px rgb(255, 255, 255);
     margin-bottom: 100px;
     transform: translate(12%)
@@ -78,11 +83,18 @@ nav li{
 .counter{
     display: flex;
     padding: 1rem;
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 .counter-item{
     padding: 2rem 4rem;
+    /* font-size: 3rem; */
+}
+
+.vid-container{
+    max-width: 100%;
+    height: 100vh;
+    position: relative;
 }
 
 .overlay{
@@ -194,4 +206,156 @@ button{
 
 #vid{
     border-radius: 2rem;
+}
+
+.creator{
+    width: 90%;
+    height: 90vh;
+    background-color: rgb(255, 167, 227);
+    /* position: absolute; */
+    /* top: 390%; */
+    /* bottom: 20%; */
+    transform: translate(6%,65%);
+    border-radius: 2rem;
+    /* padding: 2rem; */
+    margin-bottom: 2rem;
+}
+
+.creator-head{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    font-size: 2rem;
+    padding: 1rem 4rem;
+}
+
+.create-name{
+    width: 90%;
+    height: 60%;
+    background-color: aliceblue;
+    transform: translate(5%);
+    border-radius: 2rem;
+}
+
+.steps{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* position: absolute; */
+    height: 150vh;
+    /* border: solid 50px black; */
+    transform: translate(0%,50%);
+    width: 100%;
+    /* background-color: rgb(255, 0, 0); */
+    padding: 1rem;
+}
+
+.steps-text{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.steps-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80%;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+}
+
+.content{
+    width: 30%;
+    height: 93vh;
+    position: relative;
+    /* background-color: aliceblue; */
+    margin: 1rem 1rem;
+    /* font-size: 1.2rem; */
+}
+
+.image-container {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 75%;
+    border-radius: 15px;
+    padding-top: 100%; 
+}
+
+.number {
+    position: absolute;
+    bottom: 110px; 
+    right: -20px; 
+    text-align: center;
+    font-size: 1.5rem; 
+    /* background: rgba(255, 255, 255, 0.5);  */
+    font-size: 5rem;
+    font-weight: 600;
+    color: orange;
+    padding: 5px; 
+    border-radius: 5px; 
+}
+h2 {
+    font-size: 2.5rem;
+    margin-top: 50px; 
+}
+
+p {
+    font-size: 3rem;
+}
+
+.features{
+    width: 100%;
+    height: 100vh;
+    transform: translate(0%,80%);
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 2rem; */
+}
+
+.features-1, .features-2{
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 80%;
+    height: 40%;
+    /* background: wheat; */
+    justify-content: space-between;
+    transform: translate(12%);
+    margin-top: 2rem;
+}
+
+.features-1 .item,
+.features-2 .item{
+    margin: 10px; /* Adjust this value to control the spacing between items */
+    width: calc(33.33% - 10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    position: relative;
+    overflow: hidden;
+    border-radius: 5rem;
+    /* background: #ffffff; */
+    padding: 20px;
+    background: transparent;
+}
+
+.item img {
+    filter: hue-rotate(220deg);
+    border-radius: 1rem;
+    width: 30%; /* Make the image fill the width of the item div */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove any default inline styles that may affect alignment */
+}
+
+.item-text {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 130px;
+    color: rgb(255, 255, 255); /* Adjust text color as needed */
 }
