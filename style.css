@@ -423,3 +423,129 @@ p {
     background: black;
     transition: 0.5s;
 }
+
+@media screen and (max-width:740px) {
+
+    nav{
+        width: 100%;
+        font-size: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul{
+        width: fit-content;
+        justify-content: center;
+        border: solid 1px rgb(255, 255, 255);
+        border-radius: 5rem;
+        display: flex;
+    }
+
+    button{
+        font-size: 0.5rem;
+        height: fit-content;
+    }
+    
+    nav li{
+        padding: 0.5rem 1rem;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .home-text{
+        font-size: 1rem;
+    }
+    
+    .profiles{
+        height: auto;
+        padding: 1rem 0rem;
+    }
+
+    .profile-pic{
+        height: 60px;
+        width: 60px;
+        margin: 0.5rem;
+    }
+
+    .count{
+        width: 80vw;
+        height: 30%;
+        font-size: 0.5rem;
+    }
+
+    .counter-item{
+        padding: 0rem 1rem;
+    }
+
+    .counter-item p{
+        font-size: 1rem !important;
+        
+    }
+
+    .vid-container{
+        max-width: 100vw;
+        height: 50vh;
+        position: relative;
+    }
+
+    .craft-text{
+        line-height: 2rem;
+    }
+
+    p{
+        font-size: 1rem !important;
+    }
+
+    #sub_text{
+        font-size: 0.5rem !important;
+    }
+
+    .middle{
+        font-size: 1.2rem;
+    }
+
+    .shorts{
+        transform: translate(0%,130%);
+        height: 170px;
+        width: 100vw;
+        border-radius: 0px !important;
+    }
+
+    .video{
+        border-radius: 20px;
+    }
+
+    #vid{
+        border-radius: 20px;
+    }
+
+    .steps{
+        transform: translate(0%,-25%);
+    }
+
+    .steps-content{
+        flex-direction: column;
+        width: 100%;
+        height: 300px;
+    }
+
+    .content{
+        height: 100%;
+        width: 100%;
+        margin-bottom: 300px;
+    }
+
+    .content h2{
+        font-size: 1rem;
+    }
+
+    .number{
+        font-size: 2.5rem;
+        right: 10%;
+        top:-10%;
+    }
+  
+}

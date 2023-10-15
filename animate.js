@@ -19,17 +19,6 @@ gsap.from(".count",{
         scroller:"body"
     }
 })
-gsap.from("profiles",{
-    y:50,
-    duration:1,
-    delay:2,
-    opacity:0,
-    scrollTrigger:{
-        trigger:".profiles",
-        scroller:"body"
-    }
-})
-
 
 gsap.from(".shorts .video1",{
     y:50,
