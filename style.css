@@ -20,13 +20,21 @@ body{
 }
 
 .profile-pic{
+    display: flex;
+    flex-direction: column;
     width: 160px; 
     height: 160px;
     border-radius: 50%; 
-    background-color: #333; 
+    background-color: rgb(0, 0, 0); 
     margin: 0 30px;
     position: relative;
     overflow: hidden;
+    /* text-align: center; */
+}
+
+.profile-pic p {
+    margin-top: 10px; /* Adjust this value as needed to control the spacing between the image and text */
+    font-size: 1rem;
 }
 
 .profile-pic:hover{
@@ -55,6 +63,7 @@ nav{
     z-index: 999;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 nav ul{
@@ -63,10 +72,20 @@ nav ul{
     border: solid 1px rgb(255, 255, 255);
     border-radius: 5rem;
     display: flex;
+    margin: 0; /* Remove default margin on ul */
+    padding: 0; /* Remove default padding on ul */
 }
 
 nav li{
     padding: 1rem 2rem;
+}
+
+nav img {
+    width: auto; /* Adjust the width and height as needed for your logo */
+    height: 60%; /* This maintains the aspect ratio of the logo */
+    top: 20%;
+    margin-top: 0; /* Adjust this value to align the logo correctly */
+    margin-right: 10px; /* Add margin to separate the logo from the ul */
 }
 
 .count{
@@ -443,8 +462,22 @@ p {
     }
 
     button{
+        display: flex;
         font-size: 0.5rem;
-        height: fit-content;
+        padding: 0rem 0rem;
+        width: 50px;
+        align-items: center;
+        justify-content: center;
+        /* margin: 1rem 1rem; */
+        /* height: fit-content; */
+    }
+
+    .home-btn{
+        display: flex;
+        justify-content: space-between;
+        width: 200px;
+        display: flex;
+        padding: 1rem;
     }
     
     nav li{
@@ -465,9 +498,12 @@ p {
     }
 
     .profile-pic{
+        display: flex;
+        flex-direction: column;
         height: 60px;
         width: 60px;
         margin: 0.5rem;
+        position: relative;
     }
 
     .count{
@@ -504,7 +540,7 @@ p {
     }
 
     .middle{
-        font-size: 1.2rem;
+        font-size: 1.2rem !important;
     }
 
     .shorts{
@@ -547,5 +583,49 @@ p {
         right: 10%;
         top:-10%;
     }
-  
+
+    nav img{
+        left: 1%;
+    }
+
+    .features{
+        width: 100vw;
+        transform: translate(0%,95%);
+    }
+
+    .features-text{
+        height: fit-content;
+    }
+    .features-1, .features-2{
+        width: 100%;
+        margin-left: 0;
+        transform: translate(0%);
+        left: 0%;
+    }
+
+    .subscription{
+        width: 100vw;
+        transform: translate(0%,65%);
+    }
+    
+    .subscription-text{
+        height: fit-content;
+        font-size: 1.5rem;
+    }
+
+    .registration{
+        height: 200px;
+        border: solid 5px black;
+    }
+
+    .registration h1{
+        font-size: 1rem;
+    }
+
+    .registration button{
+        font-size: 0.5rem;
+        width: fit-content;
+    }
+
+
 }
