@@ -19,17 +19,32 @@ body{
     padding: 5rem 3rem;
 }
 
+.profile-pic img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
 .profile-pic{
     display: flex;
     flex-direction: column;
-    width: 160px; 
-    height: 160px;
-    border-radius: 50%; 
+    width: 200px; 
+    height: 200px;
+    /* border-radius: 50%;  */
     background-color: rgb(0, 0, 0); 
     margin: 0 30px;
     position: relative;
     overflow: hidden;
     /* text-align: center; */
+}
+
+.followers{
+    /* font-size: 1.5rem; */
+    transform: translate(30%,420%);
+}
+
+.followers p{
+    font-size: 1.2rem !important;
 }
 
 .profile-pic p {
@@ -472,6 +487,7 @@ p {
         /* height: fit-content; */
     }
 
+
     .home-btn{
         display: flex;
         justify-content: space-between;
@@ -489,7 +505,7 @@ p {
     }
 
     .home-text{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     
     .profiles{
@@ -497,11 +513,25 @@ p {
         padding: 1rem 0rem;
     }
 
+    .profile-pic img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .followers{
+        /* font-size: 1.5rem; */
+        transform: translate(20%,250%);
+    }
+    
+    .followers p{
+        font-size: 0.5rem !important;
+    }
+
     .profile-pic{
         display: flex;
         flex-direction: column;
-        height: 60px;
-        width: 60px;
+        height: 100px;
+        width: 100px;
         margin: 0.5rem;
         position: relative;
     }
@@ -544,22 +574,39 @@ p {
     }
 
     .shorts{
-        transform: translate(0%,130%);
+        display: flex;
+        flex-direction: column;
+        transform: translate(0%,630%);
         height: 170px;
         width: 100vw;
         border-radius: 0px !important;
     }
 
     .video{
+        width: 70%;
+        height: auto;
         border-radius: 20px;
+        margin: 1rem 1rem;
     }
 
     #vid{
         border-radius: 20px;
     }
 
+    .video1{
+        transform: translateY(-10%) rotate(10deg);
+    }
+
+    .video3{
+        transform: translateY(10%) rotate(10deg);
+    }
+
+    .video4{
+        transform: translateY(10%) rotate(-10deg);
+    }
+
     .steps{
-        transform: translate(0%,-25%);
+        transform: translate(0%,100%);
     }
 
     .steps-content{
@@ -590,7 +637,7 @@ p {
 
     .features{
         width: 100vw;
-        transform: translate(0%,95%);
+        transform: translate(0%,270%);
     }
 
     .features-text{
@@ -603,9 +650,14 @@ p {
         left: 0%;
     }
 
+    .item img{
+        width: 50%;
+    }
+
     .subscription{
         width: 100vw;
-        transform: translate(0%,65%);
+        height: 50vh;
+        transform: translate(0%,575%);
     }
     
     .subscription-text{
